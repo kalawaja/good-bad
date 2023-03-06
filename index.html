@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./echarts.js"></script>
+    <script  defer src="./charts.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js" defer></script>
+
     <title>Good-Bad</title>
 </head>
 <body>
-    <div id="graph-container">
-        <canvas id="graph"></canvas>
-        <div id="button-container">
-          <button id="good-button">Good</button>
-          <button id="bad-button">Bad</button>
-        </div>
-    </div>      
+    <div id="chart"></div>
+    <div class="buttons">
+        <button id="btn-good" onclick="good()">Good</button>
+        <button id="btn-bad" onclick="bad()">Bad</button>
+    </div>
 </body>
 </html>
