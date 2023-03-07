@@ -7,33 +7,37 @@
   align-items: center;
 }
 
-.buttons {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-button {
-  align-items: center;
-  justify-content: center;
-  display: inline-flex;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: auto;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 #btn-good {
-  color: #fff;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+#btn-good:hover {
   background-color: #4caf50;
+  color: #fff;
 }
 
 #btn-bad {
-  color: #fff;
+  color: #f44336;
+  border: 1px solid #f44336;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#btn-bad:hover {
   background-color: #f44336;
+  color: #fff;
+}
+
+#salve {
+  color: #ff4b62;
+  font-size: 1.5em;
+}
+
+#mondo {
+  color: #4a4870;
+  font-size: 1.5em;
 }
