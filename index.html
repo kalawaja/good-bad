@@ -7,14 +7,59 @@
     <script defer src="./echarts.js"></script>
     <script  defer src="./charts.js"></script>
     <link rel="stylesheet" href="./style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Good-Bad</title>
 </head>
 <body>
-    <div id="chart"></div>
-    <div class="buttons">
-        <button id="btn-good" onclick="good()">Good</button>
-        <button id="btn-bad" onclick="bad()">Bad</button>
-    </div>
+    <div class="b-example-divider"></div>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+          <h1 class="display-5 fw-bold text-white">How are you ?</h1>
+          <div class="col-lg-6 mx-auto">
+            <div id="chart"></div>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button id="btn-good" type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" onclick="good()">Good</button>
+              <button id="btn-bad" type="button" class="btn btn-outline-light btn-lg px-4" onclick="bad()">Bad</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <footer class="p-3 bg-dark">
+          <ul class="nav justify-content-center border-bottom p-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+          </ul>
+          <p class="text-center text-white">© 2023 <span id="salve">SALVE</span> <span id="mondo">MONDO</span> Inc</p>
+        </footer>
+
 </body>
 </html>
